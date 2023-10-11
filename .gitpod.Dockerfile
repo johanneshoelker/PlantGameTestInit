@@ -35,3 +35,5 @@ RUN wget -q "https://storage.googleapis.com/flutter_infra_release/releases/stabl
     && flutter config --android-sdk $ANDROID_HOME \
     && yes | flutter doctor --android-licenses \
     && flutter doctor
+
+RUN brew tap dart-lang/dart && brew install dart
